@@ -1,0 +1,38 @@
+﻿title: RyanDialogue
+tags:
+---
+Royce: "Hey Kelsey"
+Kelsey: "Hi! Whats up?"
+Royce: "Can you go find Dorothy and ask what show she wants to watch?"
+-> "Sure!"
+    <<jump nope>>
+-> "No."
+    <<jump failed>>
+-> "She probably wants to watch Game of Thrones."
+    <<jump failed>>
+-> "I asked her earlier, she said Teen Wolf"
+    <<jump failed>>
+-> "Already done, she said she wants Shadowhunters!"
+    <<jump failed>>
+-> "I just did, she says she wants to watch Heartstopper!"
+    <<jump complete>>
+-> "I think she wants to watch Bridgerton"
+    <<jump failed>>
+===
+title: nope
+---
+Royce: "Okay, let me know!"
+-> End the dialogue
+===
+title: failed
+---
+Royce: "You sure? That doesn't seem like her kind of show..."
+Quest failed
+-> End the dialogue
+===
+title: complete
+---
+Royce: "Thanks so much!"
+Quest Complete
+-> End the dialogue
+===
