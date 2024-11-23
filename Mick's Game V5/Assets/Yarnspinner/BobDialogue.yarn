@@ -1,0 +1,40 @@
+﻿title: BobDialogue
+tags:
+---
+Kelsey: "Nice weather out here today!"
+Bob: "..."
+Kelsey: "Right Bob?"
+Bob: "mmm"
+-> "Why are you so weird Bob?"
+   <<jump angry>>
+-> Okay, talk later!"
+   <<jump friendly>>
+===
+title: angry
+---
+Bob: "You're the worst friend ever"
+-> "I'm sorry bob I didn't mean it like that, I like that you're weird!"
+   <<jump kind>>
+-> "What.. You are weird, I hate hanging out with you!"
+   <<jump afwul>>
+===
+title: kind
+---
+Bob: "It's okay I guess I overreacted... I understand now lol"
+-> End the dialogue
+===
+title: afwul
+---
+Bob: "I hate you too!"
+Bob: *starts crying*
+Bob: "Leave me alone!"
+-> End the dialogue
+===
+title: friendly
+---
+Bob: "I appreciate you friend..."
+Kelsey: ":D"
+Kelsey: "I appreciate you too Bob. Maybe we can watch TV later in silence?" 
+Bob: "Of course..." 
+-> End the dialogue
+===

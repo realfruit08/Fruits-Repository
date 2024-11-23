@@ -1,0 +1,21 @@
+﻿title: DarcyDialogue
+tags:
+---
+Darcy: Hey! Looking for something?
+Kelsey: Yeah have you seen Dorothy anywhere? 
+Darcy: "Hmm i'm not sure, maybe ask Sydney? She's south-west of the house waiting for the bus"
+-> Thanks!
+    <<jump good3>>
+-> You're no help...
+    <<jump bad>>
+===
+title: good3
+---
+Darcy: "no problem friendo!"
+-> End the dialogue
+===
+title: bad
+---
+Darcy: "you dont have to be mean about it..."
+-> End the dialogue
+===
