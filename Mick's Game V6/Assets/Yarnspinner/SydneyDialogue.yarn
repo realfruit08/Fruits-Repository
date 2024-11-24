@@ -1,0 +1,26 @@
+﻿title: SydneyDialogue
+tags:
+---
+Sydney: "Hi Kelsey!"
+-> Waiting for the bus?
+    <<jump bus>>
+-> You enjoying the sun?
+    <<jump sun>>
+===
+title: bus
+---
+Sydney: "Yep! 10 more minutes!"
+    <<jump dor>>
+===
+title: sun
+---
+Sydney: "Yes, its such a nice day out"
+    <<jump dor>>
+===
+title: dor
+---
+Kelsey: Have you seen Dorothy anywhere? 
+Sydney: I think she's outside looking at your garden!
+Kelsey: Thanks Sydney!
+-> End the dialogue
+===

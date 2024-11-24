@@ -1,0 +1,44 @@
+﻿title: DorothyDialogue
+tags:
+---
+Dorothy: "Hey Kelsey!"
+Kelsey: "Hi! You having fun yet?"
+Dorothy: "Yeah! I love when we all hang out"
+-> What did you think of the Taylor Swift concert the other day? I know you went."
+    <<jump taylor>>
+-> Have you had anything to eat yet? Laura's exited for people to try her new recipes"
+    <<jump laura>>
+===
+title: laura
+---
+Dorothy: "Not yet but i'm looking forward to it! Shes such a great cook!"
+-> Yeah!
+    <<jump completion>>
+-> I guess...
+    <<jump completion>>
+===
+title: taylor
+---
+Dorothy: "omg it was amazing. Dream come true!"
+-> Thats awesome! I'm glad you had a good time.
+    <<jump completion>>
+===
+title: completion
+---
+Kelsey: "By the way, Royce wants to know what TV show you want to watch"
+Dorothy: "Heartstopper is supposed to be amazing, maybe we should watch that one?"
+-> "Good choice! I'll let him know!"
+    <<jump good1>>
+-> "not a great choice..."
+    <<jump rude>>
+===
+title: good1
+---
+Dorothy: "Thanks!"
+-> End the dialogue
+===
+title: rude
+---
+Dorothy: "..."
+-> End the dialogue
+===

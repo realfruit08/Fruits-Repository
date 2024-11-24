@@ -1,0 +1,51 @@
+﻿title: RoyceDialogue
+tags:
+---
+<<if $talkedtoDorothy == true>>
+    <<jump after>>
+<<else>>
+Royce: "Hey Kelsey"
+Kelsey: "Hi! What's up?"
+Royce: "Can you go find Dorothy and ask what show she wants to watch?"
+-> "Sure!"
+    <<jump after>>
+-> "No."
+    <<jump failed1>>
+<<endif>>
+===
+title: after
+---
+<<if $talkedtoDorothy == true>>
+-> "She probably wants to watch Game of Thrones."
+    <<jump failed>>
+-> "I asked her earlier, she said Teen Wolf."
+    <<jump failed>>
+-> "Already done, she said she wants Shadowhunters!"
+    <<jump failed>>
+-> "I just did, she says she wants to watch Heartstopper!"
+    <<jump complete>>
+-> "I think she wants to watch Bridgerton."
+    <<jump failed>>
+<<else>>
+Royce: "You should go speak with Dorothy."
+-> End the dialogue
+<<endif>>
+===
+title: failed
+---
+Royce: "You sure? That doesn't seem like her kind of show..."
+Quest failed
+-> End the dialogue
+===
+title: complete
+---
+Royce: "Thanks so much!"
+Quest Complete
+-> End the dialogue
+===
+title: failed1
+---
+Royce: "You suck"
+Quest failed
+-> End the dialogue
+===

@@ -1,0 +1,97 @@
+﻿title: LauraDialogue
+tags:
+---
+Laura: "Hello, would you like some carrots? They came stright from the garden"
+-> "Yes please! These look delicious"
+   <<jump nice>>
+-> No ew these look so gross!"
+   <<jump mean>>
+===
+title: nice
+---
+Laura: "Here you go, enjoy"
+Kelsey: "Thanks"
+Kelsey: "Yum these are so good!"
+Laura: "thank you!"
+-> "Where did you learn the recipe?" 
+    <<jump recipe>>
+-> "I like what you've done with your place, its very nice" 
+    <<jump house>>
+===
+title: recipe
+---
+Laura: "I saw it on that cooking show... hmm whats it called?"
+-> "Top Chef?" 
+    <<jump no>>
+-> "Hell's Kitchen?"
+    <<jump yes>>
+===
+title: no
+---
+Laura: "No i beleive it was Hell's Kitchen" 
+Kelsey: "Big fan of Gordon Ramsey?"
+Laura: "Yes, he's hilarious!"
+    <<jump end>>
+===
+title: yes
+---
+Laura: "Yes that's the one!" I'm a big fan of Gordon Ramsey!"
+Kelsey: "Yeah he's really funny!"
+    <<jump end>>
+===
+title: house
+---
+Laura: "Thank you, this interior designer named Mick redid a few things" 
+Laura: "I'm glad you noticed!"
+Kelsey: "Well she did a good job"
+Laura: "yeah she did!"
+    <<jump end>>
+===
+title: mean
+---
+Laura: "That's not very nice"
+-> "I'm sorry i didn't mean it like that" 
+    <<jump apology>>
+-> "It's just the truth"
+    <<jump moremean>>
+===
+title: moremean
+---
+Kelsey: "Your cooking sucks"
+Laura: "You're a bad friend..."
+-> End the dialogue
+===
+title: apology
+---
+Laura: "*sigh* It's okay, but youre cooking next time!"
+Kelsey: "You've got a deal!"
+    <<jump end>>
+===
+title: end
+---
+Laura: "Have you spoken with Bob yet?" 
+-> "Not yet, i'll go over now" 
+    <<jump ending1>>
+-> "yeah, we got into a bit of a disagreement"
+    <<jump dissapointed>>
+-> "yeah, we had a good talk"
+    <<jump good>>
+===
+title: ending1
+---
+Laura: "Okay, talk soon!"
+-> End the dialogue
+===
+title: dissapointed
+---
+Laura: "Oh no, you better go over and apologize. 
+Laura: "Talk soon..."
+-> End the dialogue
+===
+title: good
+---
+Laura: "That's good!"
+Laura: "Talk soon?"
+Kelsey: "You bet!"
+-> End the dialogue
+===
